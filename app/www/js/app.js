@@ -22,3 +22,28 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.config(function($stateProvider, $urlRouterProvider) {
+	$stateProvider
+		.state('tabs',  {
+			url: '/tab',
+			abstract: true,
+			templateUrl: 'templates/tabs.html'
+		})
+		.state('tabs.mainmenu', {
+			url: '/mainmenu',
+			views: {
+				'mainmenu-tab' : {
+					templateUrl: 'templates/mainmenu.html',
+					controller: 'MainController'
+				}
+			}
+		})
+	$urlRouterProvider.otherwise('/tab/list');
+})
+
+.controller('MainController', ['$scope'], function($scope) {
+	$scope.doRefresh = function(){
+
+	};
+})
