@@ -25,25 +25,34 @@ angular.module('starter', ['ionic'])
 
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
-		.state('tabs',  {
-			url: '/tab',
-			abstract: true,
-			templateUrl: 'templates/tabs.html'
-		})
-		.state('tabs.mainmenu', {
+		.state('mainmenu', {
 			url: '/mainmenu',
-			views: {
-				'mainmenu-tab' : {
-					templateUrl: 'templates/mainmenu.html',
-					controller: 'MainController'
-				}
-			}
+			templateUrl: 'templates/mainmenu.html',
+			controller: 'MainController'
 		})
-	$urlRouterProvider.otherwise('/tab/list');
+
+		.state('geninfo', {
+			url: '/geninfo',
+			templateUrl: 'templates/geninfo.html',
+			controller: 'GenInfoController'
+		})
+
+		.state('clinserv', {
+			url: '/clinserv',
+			templateUrl: 'templates/clinserv.html',
+			controller: 'ClinServController'
+		})
+	$urlRouterProvider.otherwise('/mainmenu');
 })
 
 .controller('MainController', ['$scope'], function($scope) {
-	$scope.doRefresh = function(){
 
-	};
+})
+
+.controller('GenInfoController', ['$scope'], '$http', function($scope, $http) {
+
+})
+
+.controller('ClinServController', ['$scope'], function($scope) {
+
 })
