@@ -28,7 +28,7 @@ angular.module('starter', ['ionic'])
 		.state('mainmenu', {
 			url: '/mainmenu',
 			templateUrl: 'templates/mainmenu.html',
-			controller: 'MainController'
+			controller: 'MainMenuController'
 		})
 
 		.state('geninfo', {
@@ -45,14 +45,33 @@ angular.module('starter', ['ionic'])
 	$urlRouterProvider.otherwise('/mainmenu');
 })
 
-.controller('MainController', ['$scope'], function($scope) {
+.controller('MainMenuController', ['$scope', '$state', function($scope, $state) {
+	$scope.whichitem = $state.params.aId;
+	$scope.menuitems = [
+		// 'General Information', 'Clinical Services', 'Quiz', 'Research', 'Feedback'
+		{
+			name: 'General Information',
+			filename: 'geninfo'
+		}, {
+			name: 'Clinical Services',
+			filename: 'clinserv'
+		}, {
+			name: 'Quiz',
+			filename: 'quiz'
+		}, {
+			name: 'Resarch',
+			filename: 'research'
+		}, {
+			name: 'Feedback'
+			filename: 'feedback'
+		}
+	];
+}])
 
-})
+.controller('GenInfoController', ['$scope', '$http', function($scope, $http) {
 
-.controller('GenInfoController', ['$scope'], '$http', function($scope, $http) {
+}])
 
-})
+.controller('ClinServController', ['$scope', function($scope) {
 
-.controller('ClinServController', ['$scope'], function($scope) {
-
-})
+}])

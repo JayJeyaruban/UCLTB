@@ -1,24 +1,25 @@
-<div class="padding bar">
+<ion-view view-title="UCL TB">
+	<ion-content class="has-header">
+		<ion-list>
+			<ion-item class="card" ng-repeat="item in menuitems" href="#/{{ item.filename }}">
+				{{ item.name }}
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
+
+<!-- <a ui-sref="geninfo" class="button button-clear button-dark button-block">
+	General Information
+</a>
+<div class="item">
+	Clinical Service
 </div>
-<ion-content>
-	<div class="card">
-		<div class="item item-divider">
-			<p>Main menu</p>
-		</div>
-		<a ui-sref="geninfo" class="button button-clear button-dark button-block">
-			General Information
-		</a>
-		<div class="item">
-			Clinical Service
-		</div>
-		<div class="item">
-			Quiz
-		</div>
-		<div class="item">
-			Research
-		</div>
-		<div class="item">
-			Feedback
-		</div>
-	</div>
-</ion-content>
+<div class="item">
+	Quiz
+</div>
+<div class="item">
+	Research
+</div>
+<div class="item">
+	Feedback
+</div> -->
