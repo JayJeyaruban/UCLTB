@@ -45,7 +45,7 @@ angular.module('starter', ['ionic'])
 
 		.state('schedule', {
 			url: '/schedule',
-			templateUrl: 'templates/schedule',
+			templateUrl: 'templates/schedule.html',
 			controller: 'ScheduleController'
 		})
 
@@ -93,4 +93,12 @@ angular.module('starter', ['ionic'])
 			filename: 'staff'
 		}
 	];
+}])
+
+.controller('ScheduleController', ['$scope', function($scope) {
+
+}])
+
+.controller('StaffController', ['$scope', function($scope) {
+	
 }])
