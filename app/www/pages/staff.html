@@ -2,9 +2,12 @@
 	<div class="bar has-header item-input-inset bar-light">
 		<label class="item-input-wrapper">
 			<i class="icon ion-search placeholder-icon"></i>
-			<input type="search" placeholder="Search">
+			<input type="search" ng-model="query" placeholder="Search">
 		</label>
 	</div>
-	<ion-content>
+	<ion-content class="has-subheader">
+		<ion-item ng-repeat='item in stafflist | filter: query'>
+
+		</ion-item>
 	</ion-content>
 </ion-view>
