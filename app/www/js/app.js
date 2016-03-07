@@ -54,6 +54,25 @@ angular.module('starter', ['ionic'])
 			templateUrl: 'templates/staff.html',
 			controller: 'StaffController'
 		})
+
+		.state('quiz', {
+			url: '/quiz',
+			templateUrl: 'templates/quiz.html',
+			controller: 'QuizController'
+		})
+
+		.state('research', {
+			url: '/research',
+			templateUrl: 'templates/research.html',
+			controller: 'ResearchController'
+		})
+
+		.state('feedback', {
+			url: '/feedback',
+			templateUrl: 'templates/feedback.html',
+			controller: 'FeedbackController'
+		})
+
 	$urlRouterProvider.otherwise('/mainmenu');
 })
 
@@ -100,5 +119,17 @@ angular.module('starter', ['ionic'])
 }])
 
 .controller('StaffController', ['$scope', function($scope) {
+
+}])
+
+.controller('QuizController', ['$scope', function($scope) {
+
+}])
+
+.controller('FeedbackController', ['$scope', function($scope) {
+
+}])
+
+.controller('ResearchController', ['$scope', function($scope) {
 	
 }])
