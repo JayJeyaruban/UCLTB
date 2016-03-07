@@ -27,49 +27,49 @@ angular.module('starter', ['ionic'])
 	$stateProvider
 		.state('mainmenu', {
 			url: '/mainmenu',
-			templateUrl: 'templates/mainmenu.html',
+			templateUrl: 'pages/mainmenu.html',
 			controller: 'MainMenuController'
 		})
 
 		.state('geninfo', {
 			url: '/geninfo',
-			templateUrl: 'templates/geninfo.html',
+			templateUrl: 'pages/geninfo.html',
 			controller: 'GenInfoController'
 		})
 
 		.state('clinserv', {
 			url: '/clinserv',
-			templateUrl: 'templates/clinserv.html',
+			templateUrl: 'pages/clinserv.html',
 			controller: 'ClinServController'
 		})
 
 		.state('schedule', {
 			url: '/schedule',
-			templateUrl: 'templates/schedule.html',
+			templateUrl: 'pages/schedule.html',
 			controller: 'ScheduleController'
 		})
 
 		.state('staff', {
 			url: '/staff',
-			templateUrl: 'templates/staff.html',
+			templateUrl: 'pages/staff.html',
 			controller: 'StaffController'
 		})
 
 		.state('quiz', {
 			url: '/quiz',
-			templateUrl: 'templates/quiz.html',
+			templateUrl: 'pages/quiz.html',
 			controller: 'QuizController'
 		})
 
 		.state('research', {
 			url: '/research',
-			templateUrl: 'templates/research.html',
+			templateUrl: 'pages/research.html',
 			controller: 'ResearchController'
 		})
 
 		.state('feedback', {
 			url: '/feedback',
-			templateUrl: 'templates/feedback.html',
+			templateUrl: 'pages/feedback.html',
 			controller: 'FeedbackController'
 		})
 
@@ -131,5 +131,5 @@ angular.module('starter', ['ionic'])
 }])
 
 .controller('ResearchController', ['$scope', function($scope) {
-	
+
 }])
