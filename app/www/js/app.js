@@ -42,13 +42,24 @@ angular.module('starter', ['ionic'])
 			templateUrl: 'templates/clinserv.html',
 			controller: 'ClinServController'
 		})
+
+		.state('schedule', {
+			url: '/schedule',
+			templateUrl: 'templates/schedule',
+			controller: 'ScheduleController'
+		})
+
+		.state('staff', {
+			url: '/staff',
+			templateUrl: 'templates/staff.html',
+			controller: 'StaffController'
+		})
 	$urlRouterProvider.otherwise('/mainmenu');
 })
 
-.controller('MainMenuController', ['$scope', '$state', function($scope, $state) {
-	$scope.whichitem = $state.params.aId;
+.controller('MainMenuController', ['$scope', function($scope) {
 	$scope.menuitems = [
-		// 'General Information', 'Clinical Services', 'Quiz', 'Research', 'Feedback'
+		//  'General Information', 'Clinical Services', 'Quiz', 'Research', 'Feedback'
 		{
 			name: 'General Information',
 			filename: 'geninfo'
@@ -62,7 +73,7 @@ angular.module('starter', ['ionic'])
 			name: 'Resarch',
 			filename: 'research'
 		}, {
-			name: 'Feedback'
+			name: 'Feedback',
 			filename: 'feedback'
 		}
 	];
@@ -73,5 +84,13 @@ angular.module('starter', ['ionic'])
 }])
 
 .controller('ClinServController', ['$scope', function($scope) {
-
+	$scope.menuitems = [
+		{
+			name: 'Clinical Schedule',
+			filename: 'schedule'
+		}, {
+			name: 'Staff',
+			filename: 'staff'
+		}
+	];
 }])
