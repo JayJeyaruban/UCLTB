@@ -42,8 +42,10 @@ angular.module('controllers', [])
 
 }])
 
-.controller('StaffController', ['$scope', function($scope) {
-
+.controller('StaffController', ['$scope', '$http', function($scope, $http) {
+	$http.get('js/staff.json').success(function(data) {
+		$scope.stafflist = data;
+	});
 }])
 
 .controller('QuizController', ['$scope', function($scope) {
@@ -56,4 +58,4 @@ angular.module('controllers', [])
 
 .controller('ResearchController', ['$scope', function($scope) {
 
-}])
+}]);
