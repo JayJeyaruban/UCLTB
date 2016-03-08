@@ -17,9 +17,16 @@ angular.module('starter', ['ionic', 'controllers'])
       // a much nicer keyboard experience.
       cordova.plugins.Keyboard.disableScroll(true);
     }
-    if(window.StatusBar) {
-      StatusBar.styleDefault();
-    }
+    // if(window.StatusBar) {
+    //   StatusBar.styleDefault();
+    // }
+		if(window.StatusBar) {
+			if (ionic.Platform.isAndroid()) {
+				StatusBar.backgroundColorByHexString("#0D47A1");
+			} else {
+				StatusBar.styleLightContent();
+			}
+		}
   });
 })
 
