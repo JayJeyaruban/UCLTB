@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic', 'controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -75,61 +75,3 @@ angular.module('starter', ['ionic'])
 
 	$urlRouterProvider.otherwise('/mainmenu');
 })
-
-.controller('MainMenuController', ['$scope', function($scope) {
-	$scope.menuitems = [
-		//  'General Information', 'Clinical Services', 'Quiz', 'Research', 'Feedback'
-		{
-			name: 'General Information',
-			filename: 'geninfo'
-		}, {
-			name: 'Clinical Services',
-			filename: 'clinserv'
-		}, {
-			name: 'Quiz',
-			filename: 'quiz'
-		}, {
-			name: 'Resarch',
-			filename: 'research'
-		}, {
-			name: 'Feedback',
-			filename: 'feedback'
-		}
-	];
-}])
-
-.controller('GenInfoController', ['$scope', '$http', function($scope, $http) {
-
-}])
-
-.controller('ClinServController', ['$scope', function($scope) {
-	$scope.menuitems = [
-		{
-			name: 'Clinical Schedule',
-			filename: 'schedule'
-		}, {
-			name: 'Staff',
-			filename: 'staff'
-		}
-	];
-}])
-
-.controller('ScheduleController', ['$scope', function($scope) {
-
-}])
-
-.controller('StaffController', ['$scope', function($scope) {
-
-}])
-
-.controller('QuizController', ['$scope', function($scope) {
-
-}])
-
-.controller('FeedbackController', ['$scope', function($scope) {
-
-}])
-
-.controller('ResearchController', ['$scope', function($scope) {
-
-}])
