@@ -4,19 +4,20 @@ angular.module('controllers', [])
 	$scope.menuitems = [
 		//  'General Information', 'Clinical Services', 'Quiz', 'Research', 'Feedback'
 		{
-			name: 'General Information',
+			name: 'About TB',
 			filename: 'geninfo'
 		}, {
-			name: 'Clinical Services',
+			name: 'About Our Service',
 			filename: 'clinserv'
 		}, {
-			name: 'Quiz',
-			filename: 'quiz'
-		}, {
-			name: 'Resarch',
+			name: 'About Our Research',
 			filename: 'research'
 		}, {
-			name: 'Feedback',
+			
+			name: 'Test Your Knowledge',
+			filename: 'quiz'
+		}, {
+			name: 'Give Us Feedback',
 			filename: 'feedback'
 		}
 	];
