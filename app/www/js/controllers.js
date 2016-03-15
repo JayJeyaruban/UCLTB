@@ -53,10 +53,30 @@ angular.module('controllers', [])
 
 }])
 
-.controller('FeedbackController', ['$scope', function($scope) {
+.controller('ResearchController', ['$scope', function($scope) {
+	$scope.menuitems = [
+		{
+			name: 'Research Project 1',
+			filename: 'project1'
+		}, {
+			name: 'Research Project 2',
+			filename: 'project2'
+		}
+	];
+}])
+
+.controller('Project1Controller', ['$scope', function($scope) {
 
 }])
 
-.controller('ResearchController', ['$scope', function($scope) {
+.controller('Project2Controller', ['$scope', function($scope) {
+
+}])
+
+
+
+.controller('FeedbackController', ['$scope', function($scope) {
 
 }]);
+
+

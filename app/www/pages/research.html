@@ -1,4 +1,9 @@
+<!-- <div class="padding bar"></div> -->
 <ion-view view-title="About Our Research">
 	<ion-content class="has-header">
+		<ion-list>
+			<ion-item class="card" ng-repeat="item in menuitems" href="#/{{ item.filename }}">
+				{{ item.name }}
 	</ion-content>
 </ion-view>
+

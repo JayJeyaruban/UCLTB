@@ -4,7 +4,6 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic', 'controllers'])
-angular.module("starter", ["ionic", "firebase"])
 
 
 .run(function($ionicPlatform) {
@@ -75,6 +74,19 @@ angular.module("starter", ["ionic", "firebase"])
 			templateUrl: 'pages/research.html',
 			controller: 'ResearchController'
 		})
+		
+				.state('project1', {
+			url: '/project1',
+			templateUrl: 'pages/project1.html',
+			controller: 'Project1Controller'
+		})
+		
+				.state('project2', {
+			url: '/project2',
+			templateUrl: 'pages/project2.html',
+			controller: 'Project2Controller'
+		})
+		
 
 		.state('feedback', {
 			url: '/feedback',
