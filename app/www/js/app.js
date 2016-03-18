@@ -63,6 +63,12 @@ angular.module('starter', ['ionic', 'controllers'])
 			controller: 'StaffController'
 		})
 
+		.state('staff.detail', {
+			url: '/staff/:aId',
+			templateUrl: 'pages/templates/stafftemplate.html',
+			controller: 'StaffController'
+		})
+
 		.state('quiz', {
 			url: '/quiz',
 			templateUrl: 'pages/quiz.html',
@@ -74,19 +80,19 @@ angular.module('starter', ['ionic', 'controllers'])
 			templateUrl: 'pages/research.html',
 			controller: 'ResearchController'
 		})
-		
+
 				.state('project1', {
 			url: '/project1',
 			templateUrl: 'pages/project1.html',
 			controller: 'Project1Controller'
 		})
-		
+
 				.state('project2', {
 			url: '/project2',
 			templateUrl: 'pages/project2.html',
 			controller: 'Project2Controller'
 		})
-		
+
 
 		.state('feedback', {
 			url: '/feedback',

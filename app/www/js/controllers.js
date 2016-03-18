@@ -13,7 +13,7 @@ angular.module('controllers', [])
 			name: 'About Our Research',
 			filename: 'research'
 		}, {
-			
+
 			name: 'Test Your Knowledge',
 			filename: 'quiz'
 		}, {
@@ -43,9 +43,10 @@ angular.module('controllers', [])
 
 }])
 
-.controller('StaffController', ['$scope', '$http', function($scope, $http) {
+.controller('StaffController', ['$scope', '$http', '$state', function($scope, $http, $state) {
 	$http.get('js/staff.json').success(function(data) {
 		$scope.stafflist = data;
+		$scope.whichstaff = $state.params.aId;
 	});
 }])
 
@@ -78,5 +79,3 @@ angular.module('controllers', [])
 .controller('FeedbackController', ['$scope', function($scope) {
 
 }]);
-
-
