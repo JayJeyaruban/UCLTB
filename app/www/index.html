@@ -7,11 +7,17 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-		<link href="css/animate.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+
+	<!-- Firebase -->
+<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/1.1.4/angularfire.min.js"></script>
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -26,8 +32,41 @@
   </head>
   <body ng-app="starter">
 		<ion-nav-bar class="bar-positive">
-			<ion-nav-back-button></ion-nav-back-button>
+			<ion-nav-back-button class="button-clear">
+                  <i class="ion-arrow-left-c"></i> Back
+            </ion-nav-back-button>
 		</ion-nav-bar>
-		<ion-nav-view></ion-nav-view>
+		<ion-nav-view>
+		
+        <ion-view>
+            <ion-nav-buttons side="primary">
+                <button class="button" ng-click="doSomething()">
+				</button>
+		    </ion-nav-buttons>
+			
+        <ion-content>
+		
+        </ion-content>
+		</ion-view>
+		</ion-nav-view>
+		
+		<div class="tabs tabs-icon-left">
+			<a class="tab-item" href="#/mainmenu">
+				<i class="icon ion-home"></i>
+					Main Menu
+			</a>
+			
+			<a class="tab-item" href="#/geninfo">
+				<i class="icon ion-star"></i>
+					About TB
+			<a>
+			<a class="tab-item" href="#/feedback">
+				<i class="icon ion-gear-a"></i>
+					Feedback
+			</a>
+		</a></a></div>
+		
   </body>
 </html>
+
+

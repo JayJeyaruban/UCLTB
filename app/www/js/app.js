@@ -31,6 +31,8 @@ angular.module('starter', ['ionic', 'controllers'])
   });
 })
 
+
+
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('mainmenu', {
@@ -68,6 +70,24 @@ angular.module('starter', ['ionic', 'controllers'])
 			templateUrl: 'pages/quiz.html',
 			controller: 'QuizController'
 		})
+		
+				.state('correctAns', {
+			url: '/correctAns',
+			templateUrl: 'pages/correctAns.html',
+			controller: 'correctController'
+		})
+		
+				.state('incorrectAns', {
+			url: '/incorrectAns',
+			templateUrl: 'pages/incorrectAns.html',
+			controller: 'incorrectController'
+		})
+		
+		.state('question1', {
+			url: '/question1',
+			templateUrl: 'pages/question1.html',
+			controller: 'Question1Controller'
+		})		
 
 		.state('research', {
 			url: '/research',
