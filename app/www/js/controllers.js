@@ -43,7 +43,8 @@ angular.module('controllers', [])
 
 }])
 
-.controller('StaffController', ['$scope', '$http', '$state', function($scope, $http, $state) {
+.controller('StaffController', ['$scope', '$http', '$state',
+	function($scope, $http, $state) {
 	$http.get('js/staff.json').success(function(data) {
 		$scope.stafflist = data;
 		$scope.whichstaff = $state.params.aId;
