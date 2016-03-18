@@ -63,8 +63,8 @@ angular.module('starter', ['ionic', 'controllers'])
 			controller: 'StaffController'
 		})
 
-		.state('staff.detail', {
-			url: '/staff/:aId',
+		.state('detail', {
+			url: '/:aId',
 			templateUrl: 'pages/templates/stafftemplate.html',
 			controller: 'StaffController'
 		})
@@ -81,13 +81,13 @@ angular.module('starter', ['ionic', 'controllers'])
 			controller: 'ResearchController'
 		})
 
-				.state('project1', {
+		.state('project1', {
 			url: '/project1',
 			templateUrl: 'pages/project1.html',
 			controller: 'Project1Controller'
 		})
 
-				.state('project2', {
+		.state('project2', {
 			url: '/project2',
 			templateUrl: 'pages/project2.html',
 			controller: 'Project2Controller'
