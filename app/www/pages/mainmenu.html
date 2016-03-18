@@ -1,7 +1,8 @@
 <ion-view view-title="Main Menu">
 	<ion-content class="has-header">
 		<ion-list>
-			<ion-item class="card" ng-repeat="item in menuitems" href="#/{{ item.filename }}">
+			<ion-item class="card" ng-repeat="item in menuitems"
+				href="#/{{ item.filename }}">
 				{{ item.name }}
 			</ion-item>
 		</ion-list>
