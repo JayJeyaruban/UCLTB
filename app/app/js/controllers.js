@@ -1,9 +1,8 @@
 angular.module('controllers', [])
 
-
-
 .controller('MainMenuController', ['$scope', function($scope) {
 	$scope.menuitems = [
+		//  'General Information', 'Clinical Services', 'Quiz', 'Research', 'Feedback'
 		{
 			name: 'About TB',
 			filename: 'geninfo'
@@ -14,7 +13,7 @@ angular.module('controllers', [])
 			name: 'About Our Research',
 			filename: 'research'
 		}, {
-
+			
 			name: 'Test Your Knowledge',
 			filename: 'quiz'
 		}, {
@@ -44,36 +43,14 @@ angular.module('controllers', [])
 
 }])
 
-.controller('StaffController', ['$scope', '$http', '$state',
-	function($scope, $http, $state) {
+.controller('StaffController', ['$scope', '$http', function($scope, $http) {
 	$http.get('js/staff.json').success(function(data) {
 		$scope.stafflist = data;
-		$scope.whichstaff = $state.params.detail;
 	});
 }])
 
 .controller('QuizController', ['$scope', function($scope) {
 
-}])
-
-<<<<<<< HEAD
-.controller('ResearchController', ['$scope', '$http', '$state',
-	function($scope, $http, $state) {
-	$http.get('js/staff.json').success(function(data) {
-		$scope.projects = data;
-		$scope.whichproject = $state.params.proj;
-	});
-=======
-.controller('Question1Controller', ['$scope', function($scope) {
-$scope.menuitems = [
-		{
-			option: 'True',
-			filename: 'correctAns'
-		}, {
-			option: 'False',
-			filename: 'incorrectAns'
-		}
-	];
 }])
 
 .controller('ResearchController', ['$scope', function($scope) {
@@ -86,15 +63,6 @@ $scope.menuitems = [
 			filename: 'project2'
 		}
 	];
->>>>>>> cd1d20b620187ec4dfdfe01e8d0d16ddc9bdb627
-}])
-
-.controller('incorrectController', ['$scope', function($scope) {
-
-}])
-
-.controller('correctController', ['$scope', function($scope) {
-
 }])
 
 .controller('Project1Controller', ['$scope', function($scope) {
@@ -105,6 +73,10 @@ $scope.menuitems = [
 
 }])
 
+
+
 .controller('FeedbackController', ['$scope', function($scope) {
 
 }]);
+
+

@@ -31,8 +31,6 @@ angular.module('starter', ['ionic', 'controllers'])
   });
 })
 
-
-
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('mainmenu', {
@@ -65,84 +63,30 @@ angular.module('starter', ['ionic', 'controllers'])
 			controller: 'StaffController'
 		})
 
-		.state('detail', {
-			url: '/:detail',
-			templateUrl: 'pages/templates/stafftemplate.html',
-			controller: 'StaffController'
-		})
-
-    // .state('staff.detail', {
-    //   url: '/:aId',
-    //     views: {
-    //       'staff-page' : {
-    //         templateUrl: 'pages/templates/stafftemplate.html',
-    //         controller: 'StaffController'
-    //       }
-    //     }
-    // })
-
 		.state('quiz', {
 			url: '/quiz',
 			templateUrl: 'pages/quiz.html',
 			controller: 'QuizController'
 		})
-		
-		.state('correctAns', {
-			url: '/correctAns',
-			templateUrl: 'pages/correctAns.html',
-			controller: 'correctController'
-		})
-		
-		.state('incorrectAns', {
-			url: '/incorrectAns',
-			templateUrl: 'pages/incorrectAns.html',
-			controller: 'incorrectController'
-		})
-		
-		.state('question1', {
-			url: '/question1',
-			templateUrl: 'pages/question1.html',
-			controller: 'Question1Controller'
-		})		
 
 		.state('research', {
 			url: '/research',
 			templateUrl: 'pages/research.html',
 			controller: 'ResearchController'
 		})
-
-    // .state('subpage', {
-    //   url: '/:aId',
-    //   views: {
-    //     'staff-page' : {
-    //       templateUrl: 'pages/templates/stafftemplate.html',
-    //       controller: 'StaffController'
-    //     },
-    //     'project' : {
-    //       templateUrl: 'pages/templates/projecttemplate.html',
-    //       controller: 'ResearchController'
-    //     }
-    //   }
-    // })
-
-		// .state('project', {
-		// 	url: '/:proj',
-		// 	templateUrl: 'pages/templates/projecttemplate.html',
-		// 	controller: 'ResearchController'
-		// })
-
-		.state('project1', {
+		
+				.state('project1', {
 			url: '/project1',
 			templateUrl: 'pages/project1.html',
 			controller: 'Project1Controller'
 		})
-
-		.state('project2', {
+		
+				.state('project2', {
 			url: '/project2',
 			templateUrl: 'pages/project2.html',
 			controller: 'Project2Controller'
 		})
-
+		
 
 		.state('feedback', {
 			url: '/feedback',
