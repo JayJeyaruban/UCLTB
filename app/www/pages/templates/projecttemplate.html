@@ -1,0 +1,6 @@
+<ion-view view-title="Project Information">
+	<ion-content ng-repeat="item in projects | filter: { ref: whichproj }"
+		class="has-header">
+		<h2>{{ whichproj.name }}</h2>
+	</ion-content>
+</ion-view>

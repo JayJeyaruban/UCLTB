@@ -63,11 +63,12 @@ angular.module('starter', ['ionic', 'controllers'])
 			controller: 'StaffController'
 		})
 
-		.state('detail', {
-			url: '/:aId',
-			templateUrl: 'pages/templates/stafftemplate.html',
-			controller: 'StaffController'
+		.state('research', {
+			url: '/research',
+			templateUrl: 'pages/research.html',
+			controller: 'ResearchController'
 		})
+
 
 		.state('quiz', {
 			url: '/quiz',
@@ -75,30 +76,22 @@ angular.module('starter', ['ionic', 'controllers'])
 			controller: 'QuizController'
 		})
 
-		.state('research', {
-			url: '/research',
-			templateUrl: 'pages/research.html',
-			controller: 'ResearchController'
-		})
-
-		.state('project1', {
-			url: '/project1',
-			templateUrl: 'pages/project1.html',
-			controller: 'Project1Controller'
-		})
-
-		.state('project2', {
-			url: '/project2',
-			templateUrl: 'pages/project2.html',
-			controller: 'Project2Controller'
-		})
-
-
 		.state('feedback', {
 			url: '/feedback',
 			templateUrl: 'pages/feedback.html',
 			controller: 'FeedbackController'
 		})
 
+		.state('detail', {
+			url: '/:detail',
+			templateUrl: 'pages/templates/stafftemplate.html',
+			controller: 'StaffController'
+		})
+
+		.state('project', {
+			url: '/:proj',
+			templateUrl: 'pages/templates/projecttemplate.html',
+			controller: 'ResearchController'
+		})
 	$urlRouterProvider.otherwise('/mainmenu');
 })

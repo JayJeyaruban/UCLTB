@@ -47,7 +47,7 @@ angular.module('controllers', [])
 	function($scope, $http, $state) {
 	$http.get('js/staff.json').success(function(data) {
 		$scope.stafflist = data;
-		$scope.whichstaff = $state.params.aId;
+		$scope.whichstaff = $state.params.detail;
 	});
 }])
 
@@ -55,16 +55,12 @@ angular.module('controllers', [])
 
 }])
 
-.controller('ResearchController', ['$scope', function($scope) {
-	$scope.menuitems = [
-		{
-			name: 'Research Project 1',
-			filename: 'project1'
-		}, {
-			name: 'Research Project 2',
-			filename: 'project2'
-		}
-	];
+.controller('ResearchController', ['$scope', '$http', '$state',
+	function($scope, $http, $state) {
+	$http.get('js/project.json').success(function(data) {
+		$scope.projects = data;
+		$scope.whichproj = $state.params.proj;
+	});
 }])
 
 .controller('Project1Controller', ['$scope', function($scope) {
