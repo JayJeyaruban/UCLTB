@@ -7,6 +7,7 @@
 	</div>
 	<ion-content class="has-subheader">
 		<ion-list>
+			{{ stafflist }}
 			<ion-item class="item-thumbnail-left"
 				ng-repeat='item in stafflist | filter: query'
 				ui-sref="detail({ detail: item.ref })">
