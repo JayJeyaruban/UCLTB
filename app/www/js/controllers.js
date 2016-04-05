@@ -1,4 +1,5 @@
-angular.module('controllers', [])
+angular.module('controllers', ['firebase'])
+	.constant('FIREBASE_URL', 'https://resplendent-inferno-6066.firebaseio.com/')
 
 .controller('MainMenuController', ['$scope', function($scope) {
 	$scope.menuitems = [
@@ -43,9 +44,15 @@ angular.module('controllers', [])
 
 }])
 
+.factory("Items", function($firebaseArray) {
+	var itemsRef = new Firebase("");
+	return $firebaseArray(itemsRef);
+})
+
 .controller('StaffController', ['$scope', '$http', '$state',
-	function($scope, $http, $state) {
+	function($scope, $http, $state, Items) {
 	$http.get('js/staff.json').success(function(data) {
+	// $http.get('https://resplendent-inferno-6066.firebaseio.com').success(function(data) {
 		$scope.stafflist = data;
 		$scope.whichstaff = $state.params.detail;
 	});
