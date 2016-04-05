@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 <ion-view ng-repeat="item in stafflist | filter: { ref: whichstaff }"
 	view-title=" {{ item.title }}">
 	<ion-content class="has-header">
+=======
+<ion-view view-title="Project Information">
+	<ion-content ng-repeat="item in projects | filter: { ref: whichproj }"
+		class="has-header">
+		<h2>{{ whichproj.name }}</h2>
+>>>>>>> restructure
 	</ion-content>
 </ion-view>

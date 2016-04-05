@@ -2,11 +2,11 @@
 <ion-view view-title="About Our Research">
 	<ion-content class="has-header">
 		<ion-list>
-			<ion-item class="card" ng-repeat="item in menuitems" href="#/{{ item.filename }}">
+			<ion-item class="card" ng-repeat="item in projects"
+				ui-sref="project({ proj: item })">
 				{{ item.name }}
 			</ion-item>
 		</ion-list>	
 		
 	</ion-content>
 </ion-view>
-
