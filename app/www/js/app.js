@@ -34,7 +34,7 @@ angular.module('app', ['ionic'])
 .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('mainmenu', {
-			url: '/',
+			url: '/mainmenu',
 			templateUrl: 'pages/mainmenu.html',
 			controller: 'MainMenuController'
 		})
@@ -92,5 +92,5 @@ angular.module('app', ['ionic'])
 			templateUrl: 'pages/templates/projecttemplate.html',
 			controller: 'ResearchController'
 		})
-	$urlRouterProvider.otherwise('/');
+	$urlRouterProvider.otherwise('/mainmenu');
 })
