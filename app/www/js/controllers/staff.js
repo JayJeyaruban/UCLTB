@@ -1,16 +1,14 @@
 angular.module('app')
 
-.controller('StaffController', ['$scope', '$http', '$state',
-	function($scope, $http, $state, Items) {
-	$http.get('js/staff.json').success(function(data) {
-	// $http.get('https://resplendent-inferno-6066.firebaseio.com').success(function(data) {
-		$scope.stafflist = data;
-		$scope.whichstaff = $state.params.detail;
-	});
-}])
+// .controller('StaffController', ['$scope', '$firebaseArray', function($scope, $firebaseArray) {
+// 	var ref = new Firebase("https://resplendent-inferno-6066.firebaseio.com/")
+//
+// 	$scope.stafflist = $firebaseArray(ref);
+// }])
 
-.factory("Items", function($firebaseArray) {
-	var itemsRef = new Firebase("https://resplendent-inferno-6066.firebaseio.com/0");
-	console.log("Test");
-	return $firebaseArray(itemsRef);
-})
+.controller('StaffController', ['$scope', '$firebaseArray', '$state', function($scope, $firebaseObject, $state) {
+	var ref = new Firebase("https://resplendent-inferno-6066.firebaseio.com/")
+
+	$scope.stafflist = $firebaseObject(ref.child("staff"));
+	$scope.whichstaff = $state.params.detail;
+}])
