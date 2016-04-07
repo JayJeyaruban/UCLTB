@@ -1,9 +1,7 @@
 angular.module('app')
 
-.controller('ResearchController', ['$scope', '$http', '$state',
-	function($scope, $http, $state) {
-	$http.get('js/project.json').success(function(data) {
-		$scope.projects = data;
-		$scope.whichproj = $state.params.proj;
-	});
+.controller('ResearchController', ['$scope', '$firebaseArray', '$state',
+	function($scope, $firebaseArray, $state) {
+	$scope.projects = $firebaseArray(firebase.child("projects"));
+	$scope.whichproj = $state.params.proj;
 }])
