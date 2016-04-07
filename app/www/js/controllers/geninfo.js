@@ -1,5 +1,5 @@
 angular.module('app')
 
-.controller('GenInfoController', ['$scope', '$http', function($scope, $http) {
-
+.controller('GenInfoController', ['$scope', '$firebaseObject', function($scope, $firebaseObject) {
+	$scope.about = $firebaseObject(firebase);
 }])

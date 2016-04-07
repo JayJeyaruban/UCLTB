@@ -7,8 +7,8 @@ angular.module('app')
 // }])
 
 .controller('StaffController', ['$scope', '$firebaseArray', '$state', function($scope, $firebaseObject, $state) {
-	var ref = new Firebase("https://resplendent-inferno-6066.firebaseio.com/")
+	var ref = new Firebase("https://resplendent-inferno-6066.firebaseio.com/");
 
-	$scope.stafflist = $firebaseObject(ref.child("staff"));
+	$scope.stafflist = $firebaseObject(firebase.child("staff"));
 	$scope.whichstaff = $state.params.detail;
 }])
