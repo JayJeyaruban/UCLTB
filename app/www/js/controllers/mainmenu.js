@@ -13,12 +13,14 @@ angular.module('app')
 			name: 'About Our Research',
 			filename: 'research'
 		}, {
-
 			name: 'Test Your Knowledge',
 			filename: 'quiz'
 		}, {
 			name: 'Give Us Feedback',
 			filename: 'feedback'
+		}, {
+			name: 'FAQ',
+			filename: 'faq'
 		}
 	];
 }])
