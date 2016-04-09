@@ -18,6 +18,9 @@ angular.module('app')
 		}, {
 			name: 'Give Us Feedback',
 			filename: 'feedback'
+		},  {
+			name: 'FAQ',
+			filename: 'faq'
 		}
 	];
 }])
