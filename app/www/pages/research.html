@@ -3,9 +3,12 @@
 	<ion-content class="has-header">
 		<ion-list>
 			<ion-item class="card" ng-repeat="item in projects"
-				ui-sref="project({ proj: item })">
+				ui-sref="project({ proj: item.ref })">
 				{{ item.name }}
 			</ion-item>
 		</ion-list>
 	</ion-content>
 </ion-view>
+
+
+
