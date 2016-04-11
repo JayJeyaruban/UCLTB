@@ -1,9 +1,14 @@
-<ion-view view-title="Test Your Knowledge">
-	<ion-content>
-		<a href="#/mainmenu" style="text-decoration: none;">
-			<button class="button button-block button-balanced">
-				Ready to start the quiz
-			</button>
-		</a>
+<!-- <div class="padding bar"></div> -->
+<ion-view view-title="Quiz">
+	<ion-content class="has-header">
+		<ion-list>
+			<ion-item class="card" ng-repeat="item in quiz"
+				ui-sref="question({ question: item.ref })" >
+				{{ item.type }}
+			</ion-item>
+		</ion-list>
 	</ion-content>
 </ion-view>
+
+
+

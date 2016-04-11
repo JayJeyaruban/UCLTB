@@ -105,6 +105,12 @@ angular.module('app', [
 			controller: 'ResearchController'
 		})
 		
+		.state('question', {
+			url: '/:question',
+			templateUrl: 'pages/templates/questiontemplate.html',
+			controller: 'QuizController'
+		})
+		
 
 	$urlRouterProvider.otherwise('/mainmenu');
 })

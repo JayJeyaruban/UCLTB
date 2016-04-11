@@ -1,0 +1,22 @@
+<ion-view view-title="Quiz">
+	<ion-content class="has-header">
+		<ion-item>
+			<div class="card">
+				<div class="item item-text-wrap" ng-repeat="item in quiz | filter: { ref: whichquestion }">
+					<h2 align="center">{{ item.question}}</h2> 
+					<a href="#/mainmenu" style="text-decoration: none;">
+						<button class="button button-block button-balanced">
+							{{item.correct}}
+						</button>
+					</a>
+					<a href="#/mainmenu" style="text-decoration: none;">
+						<button class="button button-block button-balanced">
+							{{item.incorrect}}
+						</button>
+					</a>
+				</div>
+			</div>
+		</ion-item>
+	</ion-content>
+</ion-view>
+
