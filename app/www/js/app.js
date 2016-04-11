@@ -91,7 +91,13 @@ angular.module('app', [
 			url: '/faq',
 			templateUrl: 'pages/faq.html',
 			controller: 'FeedbackController'
-		})		
+		})	
+
+		.state('participate', {
+			url: '/participate',
+			templateUrl: 'pages/participate.html',
+			controller: 'FeedbackController'
+		})				
 
 		.state('detail', {
 			url: '/:detail',
