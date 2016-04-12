@@ -1,14 +1,15 @@
-<!-- <div class="padding bar"></div> -->
 <ion-view view-title="FAQ">
 	<ion-content class="has-header">
-	<p align="center"><b>Below is a list of frequently asked questions</b></p>
-		<ion-list>
-			<ion-item class="card" ng-repeat="item in faq"
+		<p align="center"><b>Below is a list of frequently asked questions</b></p>
+		<ion-item>
+			<div class="card">
+				<div class="item item-text-wrap" ng-repeat="item in faq"
 				ui-sref="asked({asked: item.ref })" >
-				{{ item.question}}
-			</ion-item>
-		</ion-list>
+					<h2 align="center"><b>{{ item.question}}</b></h2> 
+					</br>
+				</div>
+			</div>
+		</ion-item>
 	</ion-content>
 </ion-view>
-
 
