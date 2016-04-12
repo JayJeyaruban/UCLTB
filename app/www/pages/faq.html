@@ -1,8 +1,13 @@
-<ion-view view-title="FAQ">
-	<ion-content>
-		<p align="center"><strong>Below is a list of frequently asked questions</strong></p>
-		<br/>
-		
+<!-- <div class="padding bar"></div> -->
+<ion-view view-title="Quiz">
+	<ion-content class="has-header">
+	<p align="center"><b>Below is a list of frequently asked question</b></p>
+		<ion-list>
+			<ion-item class="card" ng-repeat="item in faq"
+				ui-sref="asked({asked: item.ref })" >
+				{{ item.question}}
+			</ion-item>
+		</ion-list>
 	</ion-content>
 </ion-view>
 

@@ -117,6 +117,12 @@ angular.module('app', [
 			controller: 'QuizController'
 		})
 		
+		.state('asked', {
+			url: '/:asked',
+			templateUrl: 'pages/templates/faqstemplate.html',
+			controller: 'FeedbackController'
+		})
+		
 
 	$urlRouterProvider.otherwise('/mainmenu');
 })
