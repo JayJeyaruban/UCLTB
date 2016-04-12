@@ -4,19 +4,20 @@
 			<div class="card">
 				<div class="item item-text-wrap" ng-repeat="item in quiz | filter: { ref: whichquestion }">
 					<h2 align="center">{{ item.question}}</h2> 
-					<a href="#/mainmenu" style="text-decoration: none;">
+					<a href="#/{{item.true}}" style="text-decoration: none;">
 						<button class="button button-block button-balanced">
-							{{item.correct}}
+							True
 						</button>
 					</a>
-					<a href="#/mainmenu" style="text-decoration: none;">
+					<a href="#/{{item.false}}" style="text-decoration: none;">
 						<button class="button button-block button-balanced">
-							{{item.incorrect}}
+							False
 						</button>
 					</a>
 				</div>
 			</div>
 		</ion-item>
+		
 	</ion-content>
 </ion-view>
 
