@@ -96,13 +96,13 @@ angular.module('app', [
 		.state('participate', {
 			url: '/participate',
 			templateUrl: 'pages/participate.html',
-			controller: 'FeedbackController'
+			controller: 'QuizController'
 		})		
 
 		.state('correctAns', {
 			url: '/correctAns',
 			templateUrl: 'pages/correctAns.html',
-			controller: 'FeedbackController'
+			controller: 'QuizController'
 		})	
 
 		.state('incorrectAns', {
