@@ -90,7 +90,7 @@ angular.module('app', [
 		.state('faq', {
 			url: '/faq',
 			templateUrl: 'pages/faq.html',
-			controller: 'FeedbackController'
+			controller: 'FaqController'
 		})	
 
 		.state('participate', {
@@ -120,7 +120,7 @@ angular.module('app', [
 		.state('asked', {
 			url: '/:asked',
 			templateUrl: 'pages/templates/faqstemplate.html',
-			controller: 'FeedbackController'
+			controller: 'FaqController'
 		})
 		
 
