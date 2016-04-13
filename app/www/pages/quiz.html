@@ -1,12 +1,9 @@
 <!-- <div class="padding bar"></div> -->
 <ion-view view-title="Quiz">
 	<ion-content class="has-header">
-		<ion-list>
-			<ion-item class="card" ng-repeat="item in quiz"
-				ui-sref="question({ question: item.ref })" >
-				{{ item.type }}
-			</ion-item>
-		</ion-list>
+		<button class="button button-block button-balanced" ui-sref="question({ question: item.ref })" >
+			Ready to Start the Quiz
+		</button>
 	</ion-content>
 </ion-view>
 

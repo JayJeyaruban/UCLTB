@@ -108,7 +108,7 @@ angular.module('app', [
 		.state('incorrectAns', {
 			url: '/incorrectAns',
 			templateUrl: 'pages/incorrectAns.html',
-			controller: 'FeedbackController'
+			controller: 'QuizController'
 		})			
 
 		.state('detail', {
