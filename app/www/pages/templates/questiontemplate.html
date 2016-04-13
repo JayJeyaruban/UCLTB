@@ -6,18 +6,11 @@
 					<p align="center"><b><u>{{item.type}}</u></b></p>
 					<br/>
 					<h2 align="center">{{ item.question}}</h2> 
-					<a href="#/{{item.true}}" style="text-decoration: none;">
-						<button class="button button-block button-balanced">
-							True
-						</button>
-					</a>
-					<a href="#/{{item.false}}" style="text-decoration: none;">
-						<button class="button button-block button-balanced">
-							False
-						</button>
-					</a>
+					<button class = "button button-block button-balanced" ng-click = "{{item.true}}">True</button>
+					<button class = "button button-block button-balanced" ng-click = "{{item.false}}">False</button>
 				</div>
 			</div>
+
 		</ion-item>
 	</ion-content>
 </ion-view>
