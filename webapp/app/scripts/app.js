@@ -30,8 +30,8 @@ angular
     })
     .when('/home', {
       templateUrl: 'views/home.html'
-      // controller: 'AboutCtrl',
-      // controllerAs: 'about'
+      controller: 'HomeCtrl',
+      controllerAs: 'home'
     })
     .otherwise({
       redirectTo: '/'
