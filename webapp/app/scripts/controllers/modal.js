@@ -9,6 +9,18 @@
  */
 angular.module('app')
 
-.controller('ModalCtrl', function($uibModal, $log) {
+.controller('ModalInstanceCtrl', function($scope, $uibModalInstance, pageContent) {
 
+  $scope.pageContent = pageContent;
+  // $scope.selected = {
+  //   item: $scope.items[0]
+  // };
+
+  $scope.ok = function() {
+    $uibModalInstance.close($scope.pageContent);
+  };
+
+  $scope.cancel = function() {
+    $uibModalInstance.dismiss('cancel');
+  };
 });
