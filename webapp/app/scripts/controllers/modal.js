@@ -9,12 +9,10 @@
  */
 angular.module('app')
 
-.controller('ModalInstanceCtrl', function($scope, $uibModalInstance, pageContent) {
+.controller('ModalInstanceCtrl', function($scope, $uibModalInstance, pageContent, title) {
 
   $scope.pageContent = pageContent;
-  // $scope.selected = {
-  //   item: $scope.items[0]
-  // };
+  $scope.pageTitle = title;
 
   $scope.ok = function() {
     $uibModalInstance.close($scope.pageContent);

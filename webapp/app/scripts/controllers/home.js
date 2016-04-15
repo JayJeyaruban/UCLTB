@@ -11,13 +11,11 @@ angular.module('app')
 
 .controller('HomeCtrl', function($scope, $firebaseObject, $firebaseArray, $uibModal, $log) {
 	$scope.base = $firebaseObject(firebase);
-
-
-  $scope.items = 'Testing';
+	$scope.genInfo = $scope.base.about;
 
   $scope.animationsEnabled = true;
 
-  $scope.open = function(size) {
+  $scope.open = function(size, title) {
     var modalInstance = $uibModal.open({
       animation: $scope.animationsEnabled,
       templateUrl: 'views/templates/modalTemplate.html',
@@ -25,13 +23,16 @@ angular.module('app')
       size: size,
       resolve: {
         pageContent: function() {
-           return $scope.items;
-        }
+           return $scope.base.about;
+        },
+				title: function() {
+					return title;
+				}
       }
     });
 
-    modalInstance.result.then(function(selectedItem) {
-      $scope.selected = selectedItem;
+    modalInstance.result.then(function(pageContent) {
+      $scope.items = selectedItem;
     }, function() {
       $log.info('Modal dismissed at: ' + new Date());
     });

@@ -17,6 +17,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'xeditable',
 		'firebase',
 		'ui.bootstrap'
   ])
