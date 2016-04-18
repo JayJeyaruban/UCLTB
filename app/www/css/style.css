@@ -1,1 +1,10 @@
 /* Empty. Add your own CSS if you like */
+
+.item-divider1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 50px;
+  background-color: #1D5EEB;
+  color: #222;
+  font-weight: 20; }
+  
