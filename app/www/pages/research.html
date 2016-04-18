@@ -1,14 +1,23 @@
-<!-- <div class="padding bar"></div> -->
+
+
 <ion-view view-title="About Our Research">
-	<ion-content class="has-header">
+	<div class="bar has-header item-input-inset bar-light">
+		<label class="item-input-wrapper">
+			<i class="icon ion-search placeholder-icon"></i>
+			<!-- Search bar -->
+			<input type="search" ng-model="query" placeholder="Search">
+		</label>
+	</div>
+	<ion-content class="has-subheader">
 		<ion-list>
-			<ion-item class="card" ng-repeat="item in projects"
+			<ion-item class="item-thumbnail-left"
+				ng-repeat='item in projects | filter: query'
 				ui-sref="project({ proj: item.ref })">
-				{{ item.name }}
+				<img src="{{item.coverimage}}">
+				<h2>{{ item.name }}</h2>
+				<p>{{ item.intro }}</p>
 			</ion-item>
 		</ion-list>
 	</ion-content>
 </ion-view>
-
-
 
