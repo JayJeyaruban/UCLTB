@@ -17,10 +17,43 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'xeditable',
 		'firebase',
 		'ui.bootstrap'
   ])
+
+// .config(function($stateProvider, $urlRouterProvider) {
+//   $stateProvider
+//     .state('ucltb', {
+//       url: '/test',
+//       templateUrl: 'views/frames/loginFrame.html',
+//       abstract: true
+//     })
+//
+//     .state('ucltb.login', {
+//       url: '/login',
+//       views: {
+//         'login' : {
+//           templateUrl: 'views/login.html',
+//           controller: 'LoginCtrl',
+//           controllerAs: 'login'
+//         }
+//       }
+//     })
+//
+//     .state('signedIn', {
+//       url: '/signedIn',
+//       templateUrl: 'views/frames/signedInFrame.html',
+//       abstract: true
+//     })
+//
+//     .state('signedIn.home', {
+//       url: '/home',
+//       templateUrl: 'views/home.html',
+//       controller: 'HomeCtrl'
+//     })
+//
+//   $urlRouterProvider.otherwise('/test');
+// })
 
 .config(function ($routeProvider) {
   $routeProvider
@@ -33,6 +66,14 @@ angular
       templateUrl: 'views/home.html',
       controller: 'HomeCtrl'
       // controllerAs: 'home'
+    })
+    .when('/staff', {
+      templateUrl: 'views/staff.html',
+      controller: 'HomeCtrl'
+    })
+    .when('/projects', {
+      templateUrl: 'views/projects.html',
+      controller: 'HomeCtrl'
     })
     .otherwise({
       redirectTo: '/'

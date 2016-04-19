@@ -11,7 +11,9 @@ angular.module('app')
 
 .controller('HomeCtrl', function($scope, $firebaseObject, $firebaseArray, $uibModal, $log) {
 	$scope.base = $firebaseObject(firebase);
-	$scope.genInfo = $scope.base.about;
+	// $scope.genInfo = JSON.toString($scope.base.about);
+	$scope.staff = $firebaseArray(firebase.child("staff"));
+	$scope.projects = $firebaseArray(firebase.child("projects"));
 
   $scope.animationsEnabled = true;
 
