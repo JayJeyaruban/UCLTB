@@ -16,6 +16,7 @@ angular.module('app')
 	$scope.projects = $firebaseArray(firebase.child("projects"));
 	$scope.quiz = $firebaseArray(firebase.child("quiz"));
 	$scope.schedule = $firebaseArray(firebase.child("schedule"));
+	$scope.faq = $firebaseArray(firebase.child("faq"));
 
   $scope.animationsEnabled = true;
 

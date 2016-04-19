@@ -32,11 +32,11 @@
 
           <ul class="nav navbar-nav">
             <li><a href="#/home">About</a></li>
-            <li class="active"><a ng-href="#/staff">Staff</a></li>
+            <li><a ng-href="#/staff">Staff</a></li>
             <li><a ng-href="#/projects">Projects</a></li>
             <li><a ng-href="#/quiz">Quiz</a></li>
             <li><a ng-href="#/schedule">Schedule</a></li>
-            <li><a ng-href="#/faq">FAQ</a></li>
+            <li class="active"><a ng-href="#/faq">FAQ</a></li>
             <li><a ng-href="#/">Contact</a></li>
           </ul>
         </div>
@@ -48,12 +48,12 @@
   <div class="container">
     <!-- <button type="button" class="aria-hidden pull-right glyphicon glyphicon-pencil" ng-click="open('lg')"></button> -->
     <uib-accordion close-others="oneAtATime">
-      <uib-accordion-group ng-repeat="staff in staff">
+      <uib-accordion-group ng-repeat="question in faq">
         <uib-accordion-heading>
-          {{ staff.name }}
+          {{ question.question }}
           <i type="button" class="pull-right glyphicon glyphicon-pencil" ng-click="open('lg', 'General Information')"></i>
         </uib-accordion-heading>
-        <p>{{ staff.bio }}</p>
+        <p>{{ question.answer }}</p>
     </uib-accordion>
   </div>
 </div>
