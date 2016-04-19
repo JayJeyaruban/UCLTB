@@ -3,9 +3,9 @@
 		<ion-item>
 			<div class="card">
 				<div class="item item-text-wrap" ng-repeat="item in faq | filter: { ref: whichasked }">
-					<h2 align="center"><b>{{ item.question}}</b></h2> 
+					<h2 align="center" style="color:red"><b>{{ item.question}}</b></h2> 
 					</br>
-					<h2 align="center">{{ item.answer}}</h2> 
+					<h2 align="center" style="color:blue">{{ item.answer}}</h2> 
 				</div>
 			</div>
 		</ion-item>
