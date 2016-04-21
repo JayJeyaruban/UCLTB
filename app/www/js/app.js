@@ -135,6 +135,12 @@ angular.module('app', [
 			controller: 'FaqController'
 		})
 		
+		.state('info', {
+			url: '/:info',
+			templateUrl: 'pages/templates/infotemplate.html',
+			controller: 'GenInfoController'
+		})
+		
 
 	$urlRouterProvider.otherwise('/mainmenu');
 })
