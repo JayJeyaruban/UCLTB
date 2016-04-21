@@ -1,11 +1,10 @@
 <ion-view view-title="Main Menu" class="black-background">
 	<ion-content class="has-header">
-	</br>
-	<center><img src="img/logo.png"></center>
+	<img class="full-image" src="img/logo.png" height="50">
 		<ion-list>
 			<ion-item class="card" ng-repeat="item in menuitems"
 				href="#/{{ item.filename }}">
-				<center style="color:blue">{{ item.name }} </center>
+				<h2 style="font-size:20px;color:blue">{{ item.name }} </h2>
 			</ion-item>
 		</ion-list>
 		
