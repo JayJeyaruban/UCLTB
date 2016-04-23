@@ -60,13 +60,19 @@ angular.module('app', [
 		.state('schedule', {
 			url: '/schedule',
 			templateUrl: 'pages/schedule.html',
-			controller: 'ScheduleController'
+			controller: 'ClinServController'
 		})
 
 		.state('staff', {
 			url: '/staff',
 			templateUrl: 'pages/staff.html',
 			controller: 'StaffController'
+		})
+		
+		.state('contact', {
+			url: '/contact',
+			templateUrl: 'pages/contact.html',
+			controller: 'ContactController'
 		})
 
 		.state('research', {
@@ -121,6 +127,12 @@ angular.module('app', [
 			url: '/:proj',
 			templateUrl: 'pages/templates/projecttemplate.html',
 			controller: 'ResearchController'
+		})
+		
+		.state('hospital', {
+			url: '/:hospital',
+			templateUrl: 'pages/templates/hospitaltemplate.html',
+			controller: 'ClinServController'
 		})
 		
 		.state('question', {
