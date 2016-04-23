@@ -50,11 +50,11 @@
     <uib-accordion close-others="oneAtATime">
       <uib-accordion-group is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled">
   			<uib-accordion-heading>
-  				General Information
+  				About
   				<i type="button" class="pull-right glyphicon glyphicon-pencil" ng-click="open('lg', 'General Information')"></i>
         </uib-accordion-heading>
-  				<!-- {{ base.about }} -->
-          {{ genInfo }}
+  				{{ base.about }}
+          <!-- {{ genInfo }} -->
       </uib-accordion-group>
     </uib-accordion>
   </div>
