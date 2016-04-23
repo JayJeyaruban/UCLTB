@@ -1,8 +1,23 @@
 <ion-view view-title="Staff">
+	<ion-content class="has-header">
+		<ion-list>
+		<br/>
+			<p align="center"><b>Select a hospital</b></p>
+			<ion-item class="card" ng-repeat='item in staff | filter: query'
+				ui-sref="detail({ detail: item.ref })">
+				<h2 style="font-size:17px;color:blue">{{ item.hospital }}</h2>
+			</ion-item> 
+		</ion-list>
+	</ion-content>
+</ion-view>
+
+
+
+<!--<ion-view view-title="Staff">
 	<div class="bar has-header item-input-inset bar-light">
 		<label class="item-input-wrapper">
 			<i class="icon ion-search placeholder-icon"></i>
-			<!-- Search bar -->
+			
 			<input type="search" ng-model="query" placeholder="Search">
 		</label>
 	</div>
@@ -18,4 +33,4 @@
 			</ion-item>
 		</ion-list>
 	</ion-content>
-</ion-view>
+</ion-view>-->
