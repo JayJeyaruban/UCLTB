@@ -8,6 +8,10 @@ angular.module('app')
 		}, {
 			name: 'Staff',
 			filename: 'staff'
+		}, {
+			name: 'Contact',
+			filename: 'contact'
 		}
 	];
 }])
+
