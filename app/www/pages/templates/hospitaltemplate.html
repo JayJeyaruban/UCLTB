@@ -1,0 +1,24 @@
+<ion-view view-title="About our Service">
+<ion-content ng-repeat="item in hosp | filter: { ref: whichhospital }"
+		class="has-header">
+		<ion-list>
+		<h2 align="center" style="color:black">{{item.hospital}}</h2>
+			<ion-item class="card" ng-click='item in hosp| filter: query' 
+			    ui-sref="schedule({ schedule: item.ref })">
+				<h2 style="font-size:17px;color:blue" >Schedule</h2>
+			</ion-item>
+			
+			<ion-item class="card" ng-click='item in hosp | filter: query'
+				ui-sref="staff({ staff: item.ref })">
+				<h2 style="font-size:17px;color:blue" >Staff</h2>
+				</ion-item>
+			
+			<ion-item class="card" ng-click='item in hosp | filter: query'
+				ui-sref="contact({ contact: item.ref })">
+				<h2 style="font-size:17px;color:blue" >Contact</h2>
+				</ion-item>
+				
+		</ion-list>
+	</ion-content>
+</ion-view>
+
