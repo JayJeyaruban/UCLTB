@@ -60,7 +60,7 @@ angular.module('app', [
 		.state('schedule', {
 			url: '/schedule',
 			templateUrl: 'pages/schedule.html',
-			controller: 'ClinServController'
+			controller: 'ScheduleController'
 		})
 
 		.state('staff', {
@@ -151,6 +151,12 @@ angular.module('app', [
 			url: '/:info',
 			templateUrl: 'pages/templates/infotemplate.html',
 			controller: 'GenInfoController'
+		})
+		
+		.state('time', {
+			url: '/:time',
+			templateUrl: 'pages/templates/timetemplate.html',
+			controller: 'ScheduleController'
 		})
 		
 
