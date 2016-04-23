@@ -103,25 +103,14 @@ angular.module('app', [
 			url: '/participate',
 			templateUrl: 'pages/participate.html',
 			controller: 'ResearchController'
-		})		
-
-		.state('correctAns', {
-			url: '/correctAns',
-			templateUrl: 'pages/correctAns.html',
-			controller: 'QuizController'
-		})	
-
-		.state('incorrectAns', {
-			url: '/incorrectAns',
-			templateUrl: 'pages/incorrectAns.html',
-			controller: 'QuizController'
-		})			
+		})				
 
 		.state('detail', {
 			url: '/:detail',
 			templateUrl: 'pages/templates/stafftemplate.html',
 			controller: 'StaffController'
 		})
+		
 
 		.state('project', {
 			url: '/:proj',
