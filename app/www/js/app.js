@@ -148,6 +148,12 @@ angular.module('app', [
 			controller: 'ScheduleController'
 		})
 		
+		.state('cont', {
+			url: '/:cont',
+			templateUrl: 'pages/templates/contacttemplate.html',
+			controller: 'ContactController'
+		})
+		
 
 	$urlRouterProvider.otherwise('/mainmenu');
 })
