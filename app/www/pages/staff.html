@@ -5,7 +5,7 @@
 			<p align="center"><b>Select a hospital</b></p>
 			<ion-item class="card" ng-repeat='item in staff | filter: query'
 				ui-sref="detail({ detail: item.ref })">
-				<h2 style="font-size:17px;color:blue">{{ item.hospital }}</h2>
+				<h2 style="font-size:17px;color:blue"><b>{{ item.hospital }}</b></h2>
 			</ion-item> 
 		</ion-list>
 	</ion-content>
