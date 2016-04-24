@@ -6,7 +6,7 @@
 					<p align="center" style="color:white">Select topic below</p>
 				</div>
 				<div class="item" ng-repeat='item in info | filter: query' ui-sref="info({ info: item.ref })">
-					<h3 align="center" style="font-size:20px;color:blue">{{ item.title}}</h3>
+					<h3 align="center" style="font-size:20px;color:blue"><b>{{ item.title}}</b></h3>
 				</div>
 			</div>
 	</ion-content>
