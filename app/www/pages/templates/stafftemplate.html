@@ -10,9 +10,11 @@
 		<ion-list ng-repeat="item in staff | filter: { ref: whichdetail }" ui-sref="detail({ detail: item.ref })">
 			<div class="list card" ng-repeat="item in item.option | filter: query">
 				<div class="item item-avatar">
-					<img src="{{item.image}}">
+					<img src="{{item.image}}" alt="no">
+					<div class="item-text-wrap">
 					<h2>{{item.name}}</h2>
 					<p>{{item.role}}</p>
+					</div>
 				</div>
 				<div class="item item-body">
 					<p>{{item.bio}}</p>
