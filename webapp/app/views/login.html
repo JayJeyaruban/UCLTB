@@ -1,5 +1,4 @@
 <div>
-<div class="header">
 	<div class="navbar navbar-default" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -18,26 +17,25 @@
 
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#/">Login</a></li>
-					<li><a ng-href="#/about">About</a></li>
-					<li><a ng-href="#/">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="container container has-header">
-	<div class="jumbotron">
-		<div class="list list-inset">
-			<label class="input input-item">
-				<input ng-model="username" type="text" placeholder="username" />
-			</label>
-			<label class="input input-item">
-				<input ng-model="password" type="password" placeholder="password" />
-			</label>
+	<div class="container has-header">
+		<div class="jumbotron">
+			<form class="form-signin">
+				<h2 class="form-signin-heading">Please sign in</h2>
+				<label for="inputEmail" class="sr-only">Email address</label>
+				<input ng-model="username" type="email" id="inputEmail"
+					class="form-control" placeholder="Email address" required autofocus>
+				<label for="inputPassword" class="sr-only">Password</label>
+				<input ng-model="password" type="password" id="inputPassword"
+					class="form-control" placeholder="Password" required>
+				<br>
+				<button ng-click="login.signin(username,password)"
+					class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			</form>
 		</div>
-		<button ng-click="login.signin(username,password)"
-			class="button button-block button-stable">Login</button>
 	</div>
-</div>
 </div>
