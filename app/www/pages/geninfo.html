@@ -1,12 +1,12 @@
 <ion-view view-title="About TB">
-	<ion-content class="has-subheader">
+	<ion-content class="has-header">
 			<div class="list list-inset">
 				<div class="item-divider1">
 					<h2 align="center" style="color:white">About TB</h2>
 					<p align="center" style="color:white">Select topic below</p>
 				</div>
 				<div class="item" ng-repeat='item in info | filter: query' ui-sref="info({ info: item.ref })">
-					<h3 align="center" style="font-size:20px;color:blue">{{ item.title}}</h3>
+					<h3 align="center" style="font-size:20px;color:blue"><b>{{ item.title}}</b></h3>
 				</div>
 			</div>
 	</ion-content>

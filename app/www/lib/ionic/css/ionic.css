@@ -7714,7 +7714,7 @@ textarea {
     text-indent: -3px; }
 
 textarea {
-  height: auto; }
+  height: 150px; }
 
 textarea,
 input[type="text"],

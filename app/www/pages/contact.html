@@ -1,13 +1,12 @@
-<ion-view view-title="Schedule">
+<ion-view view-title="Contact Details">
 	<ion-content class="has-header">
 		<ion-list>
 		<br/>
 			<p align="center"><b>Select a hospital</b></p>
-			<ion-item class="card" ng-repeat='item in schedule | filter: query'
-				ui-sref="time({ time: item.ref })">
+			<ion-item class="card" ng-repeat='item in contact | filter: query'
+				ui-sref="cont({ cont: item.ref })">
 				<h2 style="font-size:17px;color:blue"><b>{{ item.hospital }}</b></h2>
 			</ion-item> 
 		</ion-list>
 	</ion-content>
 </ion-view>
-

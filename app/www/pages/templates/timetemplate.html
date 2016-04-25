@@ -1,0 +1,22 @@
+<ion-view view-title="Schedule">
+<ion-content ng-repeat="item in schedule | filter: { ref: whichtime }"
+		class="has-header">
+		<div class="card">
+			<div class="item-divider1">
+				<h2 align="center" style="color:white">Opening Hours</h2>
+				<h5 align="center" style="color:white">{{ item.hospital}}</h5>
+			</div>
+			<div class="item item-text-wrap" ng-repeat="item in item.option">
+				<h2 align="left"><b><u>{{ item.type}}</u></b></h2>
+				<h2 align="left" style="color:red">{{ item.appointment}}</h2>
+				<h2 align="left" ng-repeat="item in item.time">{{item}}</h2>
+				</br>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
+
+
+
+
+		

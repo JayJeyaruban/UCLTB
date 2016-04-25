@@ -68,6 +68,12 @@ angular.module('app', [
 			templateUrl: 'pages/staff.html',
 			controller: 'StaffController'
 		})
+		
+		.state('contact', {
+			url: '/contact',
+			templateUrl: 'pages/contact.html',
+			controller: 'ContactController'
+		})
 
 		.state('research', {
 			url: '/research',
@@ -97,30 +103,25 @@ angular.module('app', [
 			url: '/participate',
 			templateUrl: 'pages/participate.html',
 			controller: 'ResearchController'
-		})		
-
-		.state('correctAns', {
-			url: '/correctAns',
-			templateUrl: 'pages/correctAns.html',
-			controller: 'QuizController'
-		})	
-
-		.state('incorrectAns', {
-			url: '/incorrectAns',
-			templateUrl: 'pages/incorrectAns.html',
-			controller: 'QuizController'
-		})			
+		})				
 
 		.state('detail', {
 			url: '/:detail',
 			templateUrl: 'pages/templates/stafftemplate.html',
 			controller: 'StaffController'
 		})
+		
 
 		.state('project', {
 			url: '/:proj',
 			templateUrl: 'pages/templates/projecttemplate.html',
 			controller: 'ResearchController'
+		})
+		
+		.state('hospital', {
+			url: '/:hospital',
+			templateUrl: 'pages/templates/hospitaltemplate.html',
+			controller: 'ClinServController'
 		})
 		
 		.state('question', {
@@ -139,6 +140,18 @@ angular.module('app', [
 			url: '/:info',
 			templateUrl: 'pages/templates/infotemplate.html',
 			controller: 'GenInfoController'
+		})
+		
+		.state('time', {
+			url: '/:time',
+			templateUrl: 'pages/templates/timetemplate.html',
+			controller: 'ScheduleController'
+		})
+		
+		.state('cont', {
+			url: '/:cont',
+			templateUrl: 'pages/templates/contacttemplate.html',
+			controller: 'ContactController'
 		})
 		
 

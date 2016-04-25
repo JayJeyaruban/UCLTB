@@ -1,11 +1,26 @@
-<ion-view view-title="More Info">
-	<ion-content class="has-header">
-		<ion-item class="item-text-wrap"
-			ng-repeat="item in stafflist | filter: { ref: whichstaff }">
-			<img src="http://placehold.it/100x100">
-			<h2>{{ item.name }}</h2>
-			<h3>{{ item.role }}</h2>
-			<p>{{ item.bio }}</p>
-		</ion-item>
+<ion-view view-title="Staff">
+	<div class="bar has-header item-input-inset bar-light">
+		<label class="item-input-wrapper">
+			<i class="icon ion-search placeholder-icon"></i>
+			<!-- Search bar -->
+			<input type="search" ng-model="query" placeholder="Search">
+		</label>
+	</div>
+	<ion-content class="has-subheader">
+		<ion-list ng-repeat="item in staff | filter: { ref: whichdetail }" ui-sref="detail({ detail: item.ref })">
+			<div class="list card" ng-repeat="item in item.option | filter: query">
+				<div class="item item-avatar">
+					<img src="{{item.image}}" alt="no">
+					<div class="item-text-wrap">
+					<h2>{{item.name}}</h2>
+					<p>{{item.role}}</p>
+					</div>
+				</div>
+				<div class="item item-body">
+					<p>{{item.bio}}</p>
+				</div>
+			</div>
+		</ion-list>
 	</ion-content>
 </ion-view>
+
