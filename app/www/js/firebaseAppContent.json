@@ -1,0 +1,308 @@
+{
+  "About TB" : [ {
+    "detail" : [ "Tuberculosis (TB) is an infection caused by the bacteria Mycobacterium tuberculosis, which most commonly affects the lungs. It is spread from person to person by inhaling tiny droplets from the coughs of people with the active disease in their lungs.", "TB can also affect other parts of the body, such as the brain, the kidneys, or the spine. It is a serious condition, but can be cured with a combination of specific antibiotics, treated for at least six months.", "The typical symptoms of TB disease of the lungs include:" ],
+    "image" : "img/AboutTB/TBsymptoms.png",
+    "ref" : "i0",
+    "title" : "What is TB?"
+  }, {
+    "detail" : [ "People with latent TB are infected with the Mycobacterium tuberculosis but do not have TB disease. They feel well and do not have any symptoms. The only sign of TB infection is a positive reaction to a TB blood test or a skin test. People with latent TB are not infectious and cannot spread the bacteria to others. However, they are sometimes prescribed prophylactic treatment to prevent them from developing TB disease in the future.", "In some people, the bacteria overcome the defences of the immune system and begin to multiply, leading to the progression from latent TB infection to TB disease. Some of them develop the TB disease soon after the initial infection, and others develop TB disease years later, possibly because their immune system becomes weaker. In many cases, we do not know why some people remain well and others develop disease." ],
+    "image" : "img/AboutTB/latentTB.png",
+    "ref" : "i1",
+    "title" : "Latent and Active TB"
+  }, {
+    "detail" : [ "In patients who develop symptoms, we try to obtain samples to look for the TB bacteria. Our immune system can also develop a memory for the infections that we experience. We can measure immune memory for TB using the Mantoux tuberculin skin test (TST) or a TB blood test.", "The Mantoux TST involves injecting a mixture of proteins obtained from dead TB organisms (tuberculin) into the skin in the lower part of the arm (A). A positive response to the TST, characterised by redness (B) and swelling (C), must be read and measured within 48 to 72 hours.", "Skin test interpretation mainly depends on two factors: measurement of the swelling area and the person’s risk of being infected with TB and of progression to disease if infected.", "The Interferon Gamma Release Assay (IGRA) is a newer blood test that also detects immune memory in blood cells within a tube rather than under the skin.", "Both of these tests are used to find out if someone has been infected with TB in the past, but they do not distinguish active and latent infection." ],
+    "image" : "img/AboutTB/TBtesting.png",
+    "ref" : "i2",
+    "title" : "Testing for TB"
+  }, {
+    "detail" : [ "The Bacille Calmette–Guèrin (BCG) is a vaccine for TB disease. We think the BCG vaccine reduces the risk of active TB by about a half. It is used in many countries, but currently in the UK, BCG vaccinations are only recommended in people particularly at increased risk of TB:", "1) Children living in areas with high rates of TB, or those who have close family members from countries where TB is common.", "2) People aged 16 or below planning to live or work with local persons in an area where TB is common for a long period (> 3 months).", "3) Other people, such as healthcare workers (increased risk of contracting TB while working)." ],
+    "image" : "img/AboutTB/BCGvaccine.png",
+    "ref" : "i3",
+    "title" : "The BCG vaccine"
+  }, {
+    "image" : "img/AboutTB/WorldsHighRates.png",
+    "ref" : "i4",
+    "title" : "Where is it common?"
+  } ],
+  "contact" : [ {
+    "address" : [ {
+      "line" : [ "The Grove Centre", "Pond Street", "London", "NW3 2QG" ],
+      "type" : "address"
+    } ],
+    "email" : [ {
+      "email" : "rftb@nhs.net",
+      "type" : "Email"
+    } ],
+    "hospital" : "Royal Free Hospital",
+    "number" : [ {
+      "number" : "020 7472 6816",
+      "type" : "Tel"
+    }, {
+      "number" : "020 7317 7780",
+      "type" : "Fax"
+    } ],
+    "ref" : "c0"
+  }, {
+    "address" : [ {
+      "line" : [ "TB Service North Central London Level 3", "Kenwood Wing", "The Whittington Hospital", "Whittington Health", "Magdala Avenue", "London", "N19 5NF" ],
+      "type" : "Address"
+    } ],
+    "email" : [ {
+      "email" : "TBservice@nhs.net",
+      "type" : "Email"
+    } ],
+    "hospital" : "Whittington Hospital",
+    "number" : [ {
+      "number" : "020 7288 3366",
+      "type" : "Tel"
+    } ],
+    "ref" : "c1"
+  } ],
+  "faq" : [ {
+    "answer" : "If we are able to identify the TB bacteria in a sample that you give us, then we are confident of the diagnosis. In up to half the people we believe to have TB, we are not currently able to find the bacteria despite our best efforts. In these cases we make the diagnosis by judging all the other information we can obtain from your description of the illness, various blood tests, scans and xrays or biopsies. If we are uncertain, we will explain the benefits and risks of giving you treatment for TB, so that we can you help decide on the best course of action.",
+    "question" : "How can you be sure I have TB?",
+    "ref" : "q0"
+  }, {
+    "answer" : "In most cases we can’t be certain because the time course of the illness after infection is very variable. Usually, this makes it impossible to prove the point in time at which one individual becomes infected. If you have been exposed to other people who you know to have had TB, then the infection may have arisen from that source.",
+    "question" : "How did I get infected with TB?",
+    "ref" : "q1"
+  }, {
+    "answer" : "There has been numerous research projects to evaluate the best duration of antibiotic therapy for TB. These have always shown that treatment for less than 6 months leads to an unacceptably high risk of recurrent disease, so that we can’t be confident of curing your infection. In some circumstances, for example if the TB infection affects the bone or brain, or if the bacteria are resistant to some of the antibiotics, we need to treat for longer to be confident of curing the infection.",
+    "question" : "Why do I need to take antibiotics for so long to treat TB?",
+    "ref" : "q2"
+  } ],
+  "projects" : [ {
+    "coverimage" : "img/research/pathseek/pathseek2.png",
+    "filename" : "PATHSEEK project",
+    "image" : {
+      "one" : "img/research/pathseek/pathseek1.png",
+      "two" : "img/research/pathseek/pathseek2.png"
+    },
+    "info" : [ "The PATHSEEK project, which is funded by the EU, is a collaborative effort led by  University College London and is a consortium involving three further Partners:  Oxford Gene Technology (England), CLC bio (Denmark) and Erasmus Medical  Centre (Netherlands).", "PATHSEEK is a project investigating the sequencing of  complete pathogen genomes of virus and bacteria,  including Mycobacterium tuberculosis directly from clinical  samples. Genomes are the genetic information in an organism  and contain information on, for example, drug resistance which  will allow clinicians to personalise treatment. Moreover,  pathogen genome sequences from different patients can be  compared to see if they are similar, which can inform medical  teams if there is an outbreak.", "PATHSEEK has successfully developed a system where full genomes of Mycobacterium  tuberculosis can be sequenced directly from sputum, without the need to culture, which  can take up to 8 weeks.", "This means that clinically relevant information such as antimicrobial resistance and  epidemiological markers can be determined much more rapidly than the current approach  which requires culture.", "This work will be expanded in a project funded by the BRC, which will compare the  accuracy and turnaround of this new methodology to current diagnostic tests." ],
+    "intro" : "PATHSEEK is a project investigating the sequencing of  complete pathogen genomes of virus and bacteria,  including Mycobacterium tuberculosis directly from clinical  samples. Genomes are the genetic information in an organism  and contain information on, for example, drug resistance which  will allow clinicians to personalise treatment. Moreover,  pathogen genome sequences from different patients can be  compared to see if they are similar, which can inform medical  teams if there is an outbreak.",
+    "name" : "PATHSEEK project",
+    "ref" : "p0"
+  }, {
+    "coverimage" : "img/research/idea/idealogo.png",
+    "filename" : "IDEA",
+    "image" : {
+      "one" : "img/research/idea/idea1.png",
+      "two" : "img/research/idea/idea2.png"
+    },
+    "info" : [ "Investigating the effect of de-worming on anti-mycobacterial immune responses in co-infected migrants.", "This study forms part of the UK arm of the European Union FP7 consortium initiative “Dissecting the Immunological Interplay between Poverty Related Diseases and Helminth Infections: An African-European Research Initiative”.", "Given the wide geographic overlap in occurrence, co-infections between worms (helminth infection) and HIV, TB and malaria occur in tens of millions of children and adults. It has been suggested that the interaction between these pathogens may be associated with increased susceptibility to infection and disease. This could have major public health implications by increasing the disease burden, particularly since effective vaccines are not yet available for these infections.", "Although there is considerable evidence that worm-induced effects on the immune system can modify responses to other antigens, there is little information on the effects by worm infections on the HIV-, TB- and malaria-specific immune responses in humans, and little evidence as to whether such effects are detrimental, neutral or even beneficial.", "The study is testing the hypothesis that worm infection and treating the worm changes the immune profile, with worm infected individuals at greater risk of progression to active TB disease.", "The London-based cohort is the focus of research into chronic helminth and TB infection. In collaboration with the London School of Hygiene and Tropical Medicine, we are measuring how peoples’ bodies respond to TB when they have worm infections, and how this changes when the worm infections are treated. These responses can be seen by using blood cells to measure immune reactions. We are recruiting patients into 4 different groups:" ],
+    "intro" : "Investigating the effect of de-worming on anti-mycobacterial immune responses in co-infected migrants.",
+    "name" : "Infectious Diseases in Europe and Africa (IDEA)",
+    "ref" : "p1"
+  } ],
+  "quiz" : [ {
+    "false" : "incorrectAlert()",
+    "question" : "Tuberculosis (TB) is a disease caused by a bacteria and is spread from one person to another through the air",
+    "ref" : "q0",
+    "true" : "correctAlert()",
+    "type" : "Question 1"
+  }, {
+    "false" : "correctAlert()",
+    "question" : "TB only affects the lungs",
+    "ref" : "q1",
+    "true" : "incorrectAlert()",
+    "type" : "Question 2"
+  }, {
+    "false" : "incorrectAlert()",
+    "question" : " Anyone can catch TB",
+    "ref" : "q2",
+    "true" : "correctAlert()",
+    "type" : "Question 3"
+  }, {
+    "false" : "correctAlert()",
+    "question" : "Everyone who gets infected with TB bacteria will get sick",
+    "ref" : "q3",
+    "true" : "incorrectAlert()",
+    "type" : "Question 4"
+  }, {
+    "false" : "incorrectAlert()",
+    "question" : "TB disease can be cured",
+    "ref" : "q4",
+    "true" : "correctAlert()",
+    "type" : "Question 5"
+  }, {
+    "false" : "correctAlert()",
+    "question" : "TB infection and TB disease are the same",
+    "ref" : "q5",
+    "true" : "incorrectAlert()",
+    "type" : "Question 6"
+  }, {
+    "false" : "correctAlert()",
+    "question" : "The BCG vaccine protects everyone",
+    "ref" : "q6",
+    "true" : "incorrectAlert()",
+    "type" : "Question 7"
+  }, {
+    "false" : "correctAlert()",
+    "question" : "The tuberculin skin test (TST) is a commonly used test to detect TB bacteria in the body",
+    "ref" : "q7",
+    "true" : "incorrectAlert()",
+    "type" : "Question 8"
+  }, {
+    "false" : "incorrectAlert()",
+    "question" : "PROTECT study is testing whether people with latent TB infection and BCG vaccine recipients have protective immune responses not seen in those with active disease",
+    "ref" : "q8",
+    "true" : "correctAlert()",
+    "type" : "Question 9"
+  }, {
+    "false" : "incorrectAlert()",
+    "question" : "MIMIC study is trying to develop a new test to diagnose TB more effectively",
+    "ref" : "q9",
+    "true" : "correctAlert()",
+    "type" : "Question 10"
+  }, {
+    "false" : "incorrectAlert()",
+    "question" : "IDEA study is investigating if worm infections and treating these worms changes the immune responses to TB",
+    "ref" : "q10",
+    "true" : "correctAlert()",
+    "type" : "Question 11"
+  } ],
+  "schedule" : [ {
+    "hospital" : "Royal Free Hospital",
+    "option" : [ {
+      "time" : [ "Monday: 1 - 4:30pm", "Friday: 9am - 1pm" ],
+      "type" : "Walk-in Clinic"
+    }, {
+      "time" : [ "Monday to Friday: 9am - 5pm" ],
+      "type" : "Outpatient centre"
+    }, {
+      "appointment" : "(appointment only)",
+      "time" : [ "Wednesday: 2- 6pm", "Thursday: 8:30 - 9:30am & 10:30am - 2:30pm" ],
+      "type" : "Adult clinics"
+    } ],
+    "ref" : "s0"
+  }, {
+    "hospital" : "Whittington Hospital",
+    "option" : [ {
+      "time" : [ "Monday: 1 - 4:30pm", "Friday: 9am - 1pm" ],
+      "type" : "Walk-in clinic"
+    }, {
+      "time" : [ "Monday to Friday: 9am - 5pm" ],
+      "type" : "Outpatient centre"
+    }, {
+      "appointment" : "(appointment only)",
+      "time" : [ "Wednesday: 2- 6pm", "Thursday: 8:30 - 9:30am & 10:30am - 2:30pm" ],
+      "type" : "Adult clinics"
+    }, {
+      "appointment" : "(appointment only)",
+      "time" : [ "Tuesday: 3 - 6pm every two weeks" ],
+      "type" : "Paediatric/family clinics"
+    }, {
+      "appointment" : "(appointment only)",
+      "time" : [ "Monday: 1 - 5pm", "Friday: 8:30am - 12:30pm" ],
+      "type" : "Contact clinics"
+    } ],
+    "ref" : "s1"
+  } ],
+  "staff" : [ {
+    "hospital" : "Royal Free Hospital",
+    "option" : [ {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/Staff/RFH/DLowe.png",
+      "name" : "Dr David Lowe",
+      "ref" : "DLowe",
+      "role" : "Consultant clinical immunologist",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/Staff/RFH/SRBhagani.png",
+      "name" : "Dr Sanjay R Bhagani",
+      "ref" : "SRBhagani",
+      "role" : "Consultant physician/honorary senior lecturer in infectious diseases/HIV medicine",
+      "title " : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/Staff/RFH/MLipman.png",
+      "name" : "Dr Marc Lipman",
+      "ref" : "MLipman",
+      "role" : "Consultant physician and senior lecturer",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Ian Cropley",
+      "ref" : "ICropley",
+      "role" : "Consultant in infectious diseases and HIV",
+      "title" : "Dr"
+    } ],
+    "ref" : "a0"
+  }, {
+    "hospital" : "Whittington hospital",
+    "option" : [ {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Helen Booth",
+      "ref" : "HBooth",
+      "role" : "Clinical lead – TB Service North Central London TB respiratory lead UCLH",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Jonathan Cohen",
+      "ref" : "JCohen",
+      "role" : "Consultant paediatrician UCLH",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio This is my bio This is my bio This is my bio ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Mike Brown",
+      "ref" : "MBrown",
+      "role" : "Consultant in acute medicine and infectious diseases UCLH",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Phil Gothard",
+      "ref" : "PGothard",
+      "role" : "Consultant physician UCLH",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Norman Johnson",
+      "ref" : "NJohnson",
+      "role" : "Consultant respiratory physician Whittington Health",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Stephen Lawn",
+      "ref" : "SLawn",
+      "role" : "Reader in infectious diseases and tropical medicine London School of Hygiene & Tropical Medicine/UCLH",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Professor Rob Miller",
+      "ref" : "RMiller",
+      "role" : "Consultant HIV physician Central and North West London NHS Foundation Trust",
+      "title" : "Professor"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr John Moreiras",
+      "ref" : "JMoreiras",
+      "role" : "Consultant paediatrician Whittington Health",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Pierre Pelligrino",
+      "ref" : "PPelligrino",
+      "role" : "Central and North West London NHS Foundation Trust",
+      "title" : "Dr"
+    }, {
+      "bio" : "This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. This is my bio. ",
+      "image" : "img/research/pathseek/pathseek1.png",
+      "name" : "Dr Delane Shingadia",
+      "ref" : "DShinagadia",
+      "role" : "Consultant in paediatric infectious diseases Great Ormond Street Hospital",
+      "title" : "Dr"
+    } ],
+    "ref" : "a1"
+  } ]
+}
