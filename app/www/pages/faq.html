@@ -14,7 +14,7 @@
 		<ion-item>
 			<div class="card">
 				<div class="item item-text-wrap" ng-repeat='item in faq | filter: query'
-				ui-sref="asked({ asked: item.ref })" >
+				ui-sref="asked({ asked: item.ref })" ion-track-tap="Selected faq" ion-track-data="expression" >
 					<h2 align="center" style="color:red"><b>{{ item.question}}</b></h2> 
 					</br>
 				</div>

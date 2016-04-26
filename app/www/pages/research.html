@@ -10,7 +10,7 @@
 		<ion-list>
 			<ion-item class="item-thumbnail-left"
 				ng-repeat='item in projects | filter: query'
-				ui-sref="project({ proj: item.ref })">
+				ui-sref="project({ proj: item.ref })" ion-track-tap="Read research project" ion-track-data="expression">
 				<img src="{{item.coverimage}}">
 				<h2>{{ item.name }}</h2>
 				<p>{{ item.intro }}</p>

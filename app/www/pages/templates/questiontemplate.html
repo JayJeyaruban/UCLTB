@@ -9,8 +9,8 @@
 					<p align="center"><b><u>{{item.type}}</u></b></p>
 					<br/>
 					<h2 align="center">{{ item.question}}</h2> 
-					<button class = "button button-block button-positive" ng-click = "{{item.true}}">True</button>
-					<button class = "button button-block button-assertive" ng-click = "{{item.false}}">False</button>
+					<button class = "button button-block button-positive" ng-click = "{{item.true}}" ion-track-tap="Selected option true in quiz" ion-track-data="expression">True</button>
+					<button class = "button button-block button-assertive" ng-click = "{{item.false}}" ion-track-tap="Selected option false in quiz" ion-track-data="expression">False</button>
 				</div>
 			</div>
 
