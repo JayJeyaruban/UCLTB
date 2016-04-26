@@ -3,7 +3,7 @@
 	<img class="full-image" src="img/logo.png">
 		<ion-list>
 			<ion-item class="card" ng-repeat="item in menuitems"
-				href="#/{{ item.filename }}">
+				href="#/{{ item.filename }}" ion-track-tap="Selected option in main menu" ion-track-data="expression">
 				<h2 style="font-size:17px;color:blue"><b>{{ item.name }}</b></h2>
 			</ion-item>
 		</ion-list>

@@ -1,6 +1,56 @@
 <ion-view view-title="Contact details">
 	<ion-content class="has-header">
 	<br/>
+	<form ng-submit="createComment(comment)" name="customQuoteForm">
+	<div class="list">
+		<label class="item item-input">
+			<input type="text" placeholder="Project Title" ng-model="comment.title" required>
+		</label>
+		<label class="item item-input">
+			<input type="text" placeholder="Name" ng-model="comment.name" required>
+		</label>
+		<label class="item item-input">
+			<input type="tel" placeholder="Phone" ng-model="comment.phone" required>
+		</label>
+		<label class="item item-input">
+			<input type="email" placeholder="Email" ng-model="comment.email" required>
+		</label>
+		<label class="item item-input">
+			<textarea placeholder="Comments" ng-model="comment.message" required></textarea>
+		</label>
+	</div>
+	
+	<br/>
+	<p align="center"><b>Disclaimer: </b></p>
+<p align="left"><b>The information you provide here will be used exclusively to contact you in order to give you more information about participation in our research studies. Your contact details will not be passed onto any third parties and you are free to decline to participate in the research studies at any time.</b></p>	
+	<br/>
+			<div class="padding">
+				<button ng-click(createComment) class="button button-block button-positive" ng-disabled="customQuoteForm.$invalid" ion-track-tap="Submitted participation form" ion-track-data="expression">Submit Comment</button>
+			</div>
+		</form>
+		
+			<ion-item ng-repeat="comment in comments">
+				<h3><u>{{comment.title}}</u></h3>
+				<p>{{comment.name}}</p>
+				<p>{{comment.phone}}</p>
+				<p>{{comment.email}}</p>
+				<p>{{comment.message}}</p>
+				</br>
+				</br>
+			</ion-item>	
+			</br>
+			</br>
+			</br>
+	</ion-content>
+</ion-view>-->
+
+    
+
+
+
+<!--<ion-view view-title="Contact details">
+	<ion-content class="has-header">
+	<br/>
 	<div class="list">
 		<label class="item item-input">
 			<input type="text" placeholder="Project Title" >
@@ -29,4 +79,91 @@
 		</button>
 	</a>	
 	</ion-content>
-</ion-view>
+</ion-view>-->
+
+
+
+<!--Version 2
+
+<ion-view view-title="Give Us Feedback">
+	<ion-content class="has-header">
+		<br/>
+		<p align="center"><strong>Feedback is anonymous</strong></p>
+		</br>
+	
+		<form ng-submit="createComment(comment)" name="customQuoteForm">
+			<div class="list">
+				<label class="item item-input">
+					<input type="text" placeholder="Subject" ng-model="comment.title" required>
+				</label>
+				
+				<label class="item item-input">
+					<input type="text" placeholder="Comments" ng-model="comment.message" required>
+				</label>
+			</div>
+			
+			<div class="padding">
+				<button ng-click(createComment) class="button button-block button-positive" ng-disabled="customQuoteForm.$invalid">Submit Comment</button>
+			</div>
+		</form>
+		
+			<ion-item ng-repeat="comment in comments">
+				<h3><u>{{comment.title}}</u></h3>
+				<p>{{comment.message}}</p>
+				</br>
+				</br>
+			</ion-item>	
+	</ion-content>
+</ion-view>-->
+
+
+
+
+
+<!-- Version 3- To finally use 
+
+<ion-view view-title="Contact details">
+	<ion-content class="has-header">
+	<br/>
+	<form ng-submit="createComment(comment)" name="customQuoteForm">
+	<div class="list">
+		<label class="item item-input">
+			<input type="text" placeholder="Project Title" ng-model="comment.title" required>
+		</label>
+		<label class="item item-input">
+			<input type="text" placeholder="Name" ng-model="comment.name" required>
+		</label>
+		<label class="item item-input">
+			<input type="tel" placeholder="Phone" ng-model="comment.phone" required>
+		</label>
+		<label class="item item-input">
+			<input type="email" placeholder="Email" ng-model="comment.email" required>
+		</label>
+		<label class="item item-input">
+			<textarea placeholder="Comments" ng-model="comment.message" required></textarea>
+		</label>
+	</div>
+	
+	<br/>
+	<p align="center"><b>Disclaimer: </b></p>
+<p align="left"><b>The information you provide here will be used exclusively to contact you in order to give you more information about participation in our research studies. Your contact details will not be passed onto any third parties and you are free to decline to participate in the research studies at any time.</b></p>	
+	<br/>
+			<div class="padding">
+				<button ng-click(createComment) class="button button-block button-positive" ng-disabled="customQuoteForm.$invalid">Submit Comment</button>
+			</div>
+		</form>
+		
+			<ion-item ng-repeat="comment in comments">
+				<h3><u>{{comment.title}}</u></h3>
+				<p>{{comment.name}}</p>
+				<p>{{comment.phone}}</p>
+				<p>{{comment.email}}</p>
+				<p>{{comment.message}}</p>
+				</br>
+				</br>
+			</ion-item>	
+			</br>
+			</br>
+			</br>
+	</ion-content>
+</ion-view>-->
