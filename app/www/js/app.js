@@ -102,7 +102,7 @@ angular.module('app', [
 		.state('participate', {
 			url: '/participate',
 			templateUrl: 'pages/participate.html',
-			controller: 'ResearchController'
+			controller: 'ParticipateController'
 		})				
 
 		.state('detail', {
