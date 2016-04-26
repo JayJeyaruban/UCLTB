@@ -5,13 +5,13 @@
 // the 2nd parameter is an array of 'requires'
 var firebase = null;
 angular.module('app', [
-	'ionic',
-	'firebase'
+	'ionic','ionic.service.core','firebase', 'ionic.service.analytics'
 ])
 
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicAnalytics) {
   $ionicPlatform.ready(function() {
+	  $ionicAnalytics.register();
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
