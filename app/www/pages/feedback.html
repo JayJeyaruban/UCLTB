@@ -2,23 +2,20 @@
 	<ion-content class="has-header">
 	<br/>
 	<p align="center"><strong>Feedback is anonymous</strong></p>
+	<button class="button button-block button-positive" ng-click="addComment()">
+		Click to submit comment
+	</button>
+	<ion-list>
 	</br>
-	
-	<div class="list">
-		<label class="item item-input">
-			<input type="text" placeholder="Subject">
-		</label>
-		<label class="item item-input">
-			<textarea placeholder="Comments"></textarea>
-		</label>
-	</div>
-	
-	<br/>
-	
-	<a href="#/mainmenu" style="text-decoration: none;">
-		<button class="button button-block button-positive">
-			Submit
-		</button>
-	</a>	
+	<center><h2>Comments</h2></center>
+    <ion-item ng-repeat="item in comments">
+        {{item.comment}}
+    </ion-item>
+    </ion-list>
+	</br>
+	</br>
 	</ion-content>
 </ion-view>
+
+
+
